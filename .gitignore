@@ -1,0 +1,14 @@
+# Ignore data files
+data/
+*.tif
+*.csv
+
+# Ignore Python junk
+__pycache__/
+*.pyc
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
