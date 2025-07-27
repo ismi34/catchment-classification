@@ -4,13 +4,9 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import os
 
-def bar_plot(dtframe, outpath, outfilename):
+def bar_plot(x, y, title, xlabel, ylabel, outpath, outfilename):
     outpath = Path(outpath)
-    x = dtframe['catchment']
-    y = dtframe['distance']
-    title = 'Similarity Comparison of Catchments: Altotting to Others\nBased on Landcover Classes'
-    xlabel = 'Catchment ID'
-    ylabel = 'Distance (Similarity Index)'
+    
     fig, ax = plt.subplots(figsize=(20, 8), facecolor='#f7f7f7')  # White background
 
     ax.bar(x, y, width=0.6, color='steelblue')
